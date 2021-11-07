@@ -2,6 +2,11 @@
 box-sizing: border-box;
 font-family: 'Zen Maru Gothic', sans-serif;
 }
+input, textarea, select {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
 h1 {
   text-align: center;
   background-color:#0F2137;
@@ -106,7 +111,7 @@ footer p{
   font-weight: 300;
 }
 input[type='text']:focus, select[id='state']:focus, textarea:focus, input[type='tel']:focus, input[type='email']:focus {
-  border-color:#52bab3;
+  border: 1px solid #52bab3;
 }
 label[for='postal'] {
   display: flex;
@@ -123,6 +128,6 @@ label[for='postal'] {
   justify-content: space-between;
 }
 input[id='postal']{
-  width:15%;
+  width:25%;
 }
 }
